@@ -1,0 +1,192 @@
+{
+	"movieListResult": {
+		"totCnt": 306,
+		"source": "영화진흥위원회",
+		"movieList": [
+			{
+				"movieCd": "20209836",
+				"movieNm": "개 같은 것들",
+				"movieNmEn": "Things like dogs",
+				"prdtYear": "2019",
+				"openDt": "20201217",
+				"typeNm": "장편",
+				"prdtStatNm": "개봉",
+				"nationAlt": "한국",
+				"genreAlt": "드라마,스릴러,미스터리,범죄,가족",
+				"repNationNm": "한국",
+				"repGenreNm": "드라마",
+				"directors": [
+					{
+						"peopleNm": "최종학"
+					}
+				],
+				"companys": [
+					{
+						"companyCd": "20155509",
+						"companyNm": "(주)에이치에이케이프로덕션"
+					}
+				]
+			},
+			{
+				"movieCd": "19188001",
+				"movieNm": "개의 일생",
+				"movieNmEn": "A Dog's Life",
+				"prdtYear": "1918",
+				"openDt": "",
+				"typeNm": "장편",
+				"prdtStatNm": "기타",
+				"nationAlt": "미국",
+				"genreAlt": "코미디",
+				"repNationNm": "미국",
+				"repGenreNm": "코미디",
+				"directors": [
+					{
+						"peopleNm": "찰리 채플린"
+					}
+				],
+				"companys": []
+			},
+			{
+				"movieCd": "20186324",
+				"movieNm": "언더독",
+				"movieNmEn": "Underdog",
+				"prdtYear": "2018",
+				"openDt": "20190116",
+				"typeNm": "장편",
+				"prdtStatNm": "개봉",
+				"nationAlt": "한국",
+				"genreAlt": "애니메이션",
+				"repNationNm": "한국",
+				"repGenreNm": "애니메이션",
+				"directors": [
+					{
+						"peopleNm": "오성윤"
+					},
+					{
+						"peopleNm": "이춘백"
+					}
+				],
+				"companys": [
+					{
+						"companyCd": "20040104",
+						"companyNm": "(주)오돌또기 "
+					}
+				]
+			},
+			{
+				"movieCd": "20186647",
+				"movieNm": "청춘빌라 살인사건",
+				"movieNmEn": "Dogs in the House",
+				"prdtYear": "2018",
+				"openDt": "20200102",
+				"typeNm": "장편",
+				"prdtStatNm": "개봉",
+				"nationAlt": "한국",
+				"genreAlt": "코미디,범죄,드라마",
+				"repNationNm": "한국",
+				"repGenreNm": "코미디",
+				"directors": [
+					{
+						"peopleNm": "신해강"
+					}
+				],
+				"companys": [
+					{
+						"companyCd": "20174701",
+						"companyNm": "(주)메가폰엔터테인먼트"
+					}
+				]
+			},
+			{
+				"movieCd": "20202031",
+				"movieNm": "SIFF2020 페스티벌 초이스 단편 쇼케이스 1",
+				"movieNmEn": "Festival Choice_Short Showcase 1",
+				"prdtYear": "2020",
+				"openDt": "",
+				"typeNm": "옴니버스",
+				"prdtStatNm": "기타",
+				"nationAlt": "한국",
+				"genreAlt": "기타",
+				"repNationNm": "한국",
+				"repGenreNm": "기타",
+				"directors": [],
+				"companys": []
+			},
+			{
+				"movieCd": "20200830",
+				"movieNm": "함께 살개",
+				"movieNmEn": "Dogether",
+				"prdtYear": "2020",
+				"openDt": "",
+				"typeNm": "단편",
+				"prdtStatNm": "기타",
+				"nationAlt": "한국",
+				"genreAlt": "애니메이션",
+				"repNationNm": "한국",
+				"repGenreNm": "애니메이션",
+				"directors": [],
+				"companys": []
+			},
+			{
+				"movieCd": "20201006",
+				"movieNm": "제13회 진주같은영화제 지역단편",
+				"movieNmEn": "",
+				"prdtYear": "2020",
+				"openDt": "",
+				"typeNm": "옴니버스",
+				"prdtStatNm": "기타",
+				"nationAlt": "한국",
+				"genreAlt": "기타",
+				"repNationNm": "한국",
+				"repGenreNm": "기타",
+				"directors": [],
+				"companys": []
+			},
+			{
+				"movieCd": "20200412",
+				"movieNm": "CJ문화재단 글로벌 단편영화 상영회 섹션1",
+				"movieNmEn": "",
+				"prdtYear": "2020",
+				"openDt": "",
+				"typeNm": "옴니버스",
+				"prdtStatNm": "기타",
+				"nationAlt": "기타",
+				"genreAlt": "기타",
+				"repNationNm": "기타",
+				"repGenreNm": "기타",
+				"directors": [],
+				"companys": []
+			},
+			{
+				"movieCd": "20200390",
+				"movieNm": "애견반입금지",
+				"movieNmEn": "No dogs allowed",
+				"prdtYear": "2019",
+				"openDt": "",
+				"typeNm": "단편",
+				"prdtStatNm": "기타",
+				"nationAlt": "베트남",
+				"genreAlt": "판타지,코미디",
+				"repNationNm": "베트남",
+				"repGenreNm": "판타지",
+				"directors": [],
+				"companys": []
+			},
+			{
+				"movieCd": "20209997",
+				"movieNm": "SISFF2020 국내경쟁 6: 주어진 것과 선택한 것",
+				"movieNmEn": "The Given and the Chosen",
+				"prdtYear": "2020",
+				"openDt": "",
+				"typeNm": "옴니버스",
+				"prdtStatNm": "기타",
+				"nationAlt": "한국",
+				"genreAlt": "기타",
+				"repNationNm": "한국",
+				"repGenreNm": "기타",
+				"directors": [],
+				"companys": []
+			}
+		]
+	}
+}
