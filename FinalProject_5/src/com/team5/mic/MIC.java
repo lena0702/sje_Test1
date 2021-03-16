@@ -22,10 +22,10 @@ public class MIC extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		DAO.logIn(request);
+		request.setCharacterEncoding("utf-8");
 		DAO.loginCheck(request);
+		DAO.getMyStar(request);
 		DAO.reviewsPaging(1, request, DAO.reviewPage(request));
-		
 		request.setAttribute("movieReviewWrite", "movieInfoWrite.jsp");
 		request.setAttribute("movieInfoReviews", "movieInfoReviews.jsp");
 		request.setAttribute("contentPage", "movieInfo.jsp");

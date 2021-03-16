@@ -48,6 +48,7 @@ public class GetMovie {
 				if (title.isBlank()) {
 					title = "-";
 				}
+				System.out.println(title);
 
 				String actor = (String) tmp.get("actor");
 				actor = actor.replace("<b>", "");
