@@ -56,50 +56,50 @@
 <body>
 	<table id="miTbl">
 		<tr>
-			<td>
+			<td colspan="2">
 				<h2>${param.title}</h2> <input type="hidden" name="title"
 				value="${param.title }">
 			</td>
 
-			<td align="right"><a id="kakao-link-btn"
+			<td align="right" width="20%"><a id="kakao-link-btn"
 				href="javascript:sendLink()"> <img
 					src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
 			</a></td>
-			<td rowspan="7" align="center" id="miTbl_img">
+			<td rowspan="7" align="center" id="miTbl_img" width="30%">
 				<div style="height: 100%;">
 					<img alt="No Photo" src="${param.image }">
 				</div>
 			</td>
 		</tr>
 		<tr>
-			<td colspan="2">${param.subtitle }</td>
+			<td colspan="3">${param.subtitle }</td>
 		</tr>
 		<tr>
 			<td class="miCtg">유저 평점</td>
-			<td>${param.userRating}</td>
+			<td colspan="2">${param.userRating}</td>
 		</tr>
 		<tr>
 			<td class="miCtg">내 평점</td>
 			<c:choose>
 				<c:when test="${sessionScope.accountInfo != null }">
-					<td>${myStar}</td>
+					<td colspan="2">${myStar}</td>
 				</c:when>
 				<c:otherwise>
-					<td>로그인해주세요.</td>
+					<td colspan="2">로그인해주세요.</td>
 				</c:otherwise>
 			</c:choose>
 		</tr>
 		<tr>
 			<td class="miCtg">개봉일</td>
-			<td>${param.pubDate}</td>
+			<td colspan="2">${param.pubDate}</td>
 		</tr>
 		<tr>
 			<td class="miCtg">감독</td>
-			<td>${param.director}</td>
+			<td colspan="2">${param.director}</td>
 		</tr>
 		<tr>
 			<td class="miCtg">배우</td>
-			<td>${param.actor}</td>
+			<td colspan="2">${param.actor}</td>
 		</tr>
 	</table>
 	<c:choose>

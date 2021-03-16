@@ -39,12 +39,12 @@
 	<div class="mtable">
 		<ul>
 			<li class="mtableitem"><a href="HC" class="credits__link">영화홈</a></li>
-			<li class="mtableitem"><a href="" class="credits__link">예매</a>
+			<li class="mtableitem"><a href="MovieR" class="credits__link">예매</a>
 				<ul>
 					<li><a href="MovieR" class="credits__link">예매하기</a></li>
 				</ul></li>
 
-			<li class="mtableitem"><a href="" class="credits__link">평점/리뷰</a>
+			<li class="mtableitem"><a href="RC" class="credits__link">평점/리뷰</a>
 				<ul>
 					<li><a href="RC" class="credits__link">네티즌 평점</a></li>
 					<li><a href="RC" class="credits__link">네티즌 리뷰</a></li>

@@ -86,7 +86,7 @@ public class DAO {
 			System.out.println(mu.getU_id());
 			try {
 				SqlSession ss = DBManager.connect();
-				String title = request.getParameter("movietitle");
+				String title = request.getParameter("title");
 
 				Star s = new Star(title, mu.getU_id());
 
@@ -95,10 +95,10 @@ public class DAO {
 				double myStarSum = 0;
 				double myStarAvg = 0.00;
 				if (!reviews.isEmpty()) {
-					myStarAvg = myStarSum / reviews.size();
 					for (int i = 0; i < reviews.size(); i++) {
-						myStarSum = +reviews.get(i).getR_star().doubleValue();
+						myStarSum += reviews.get(i).getR_star().doubleValue();
 					}
+					myStarAvg = myStarSum / reviews.size();
 				}
 
 				request.setAttribute("myStar", myStarAvg);
