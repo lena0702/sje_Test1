@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="team5">
+
+	<insert id="regUser" parameterType="com.team5.main.MovieUser">
+		insert into MOVIEUSER values (#{u_id}, #{u_pw}, #{u_name}, #{u_gender}, #{u_birth}, #{u_fav} )
+	</insert>
+	<insert id="regReview" parameterType="com.team5.main.Review">
+		insert into MOVIEREVIEW
+		values (moviereview_seq.nextval, sysdate, #{r_username}, #{r_title}, #{r_userid}, #{r_review}, #{r_star})
+</insert>
+	
+	
+	<select id="loginCheck" resultType="com.team5.main.MovieUser"
+		parameterType="com.team5.main.LoginUser">
+		select * from MOVIEUSER where u_id = #{id} and u_pw = #{pw}
+	</select>
+	<select id="getReview" resultType="com.team5.main.Review"
+		parameterType="com.team5.main.Review">
+		select * from MOVIEREVIEW where r_title = #{r_title}
+	</select>
+	<select id="getMyStar" parameterType="com.team5.main.Star"
+		resultType="com.team5.main.Review">
+		select * from MOVIEREVIEW where r_userid = #{userid} and
+		r_title = #{title}
+	</select>
+	<select id="getAllReviews" resultType="com.team5.main.Review">
+		select * from MOVIEREVIEW
+	</select>
+	<select id="getUserInfo" resultType="com.team5.main.MovieUser">
+		select * from MOVIEUSER
+	</select>
+	<select id="getMyReview" parameterType="com.team5.main.Review"
+		resultType="com.team5.main.Review">
+		select * from MOVIEREVIEW where r_userid = #{r_userid}
+	</select>
+	<select id="getAvgStar" parameterType="com.team5.main.Review"
+		resultType="com.team5.main.Review">
+		select avg(r_star) from MOVIEREVIEW where r_title =
+		#{r_title}
+	</select>
+	<insert id="regMovie" parameterType="com.team5.main.MovieSearch">
+		insert into MOVIEINFO values
+		(#{m_title}, #{m_actor}, #{m_subtitle}, #{m_pubdate}, #{m_director}, #{m_image}, #{m_rating} )
+	</insert>
+	<select id="idCheck" resultType="com.team5.main.MovieUser">
+		select * from MOVIEUSER where u_id = #{id}
+	</select>
+</mapper>

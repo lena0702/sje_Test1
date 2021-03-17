@@ -24,9 +24,14 @@ public class SIConfirmC extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 진짜 회원가입하는 컨트롤러
-		DAO.regUser(request);
-		request.setAttribute("contentPage", "signInConfirm.jsp");
-		request.getRequestDispatcher("index.jsp").forward(request, response);
+		if (DAO.idCheck(request, response) == true) {
+			DAO.regUser(request);
+			request.setAttribute("contentPage", "signInConfirm.jsp");
+			request.getRequestDispatcher("index.jsp").forward(request, response);			
+		}else {
+			request.setAttribute("contentPage", "signInFail.jsp");			
+			request.getRequestDispatcher("index.jsp").forward(request, response);			
+		}
 	}
 
 }

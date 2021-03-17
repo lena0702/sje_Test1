@@ -1,0 +1,56 @@
+@charset "UTF-8";
+#miTbl {
+	width: 80%;
+	height: 250px;
+	align-content: center;
+	align-self: center;
+	align-items: center;
+	margin: auto;
+	border-color: white;
+	border-width: thin;
+	
+}
+#miTbl tbody {
+	align-self: center;
+	vertical-align: middle;
+}
+#miTbl td {
+	padding: 5px;
+}
+.miCtg {
+	align-content: center; align-self : center; align-items : center;
+	background-color: #ccc;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	align-self: center;
+	align-items: center;
+	width: 20%;
+}
+.miCtt {
+	align-self: center;
+}
+h2 {
+	font-size: 30px;
+	color: black;
+}
+.centr {
+	align-self: center;
+	align-content: center;
+	font-weight: lighter;
+	color: lightgrey;
+	margin: auto;
+	text-align: cen
+}
+#miTbl2 {
+	width: 80%;
+	margin: auto;
+}
+img{
+	height: 100%;	
+	width: auto;
+}
+#miTbl_img{
+	object-fit: contain;
+	
+}

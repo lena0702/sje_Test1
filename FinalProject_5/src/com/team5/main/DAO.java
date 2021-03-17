@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.apache.ibatis.session.SqlSession;
@@ -38,6 +39,25 @@ public class DAO {
 		}
 	}
 
+	public static boolean idCheck(HttpServletRequest request, HttpServletResponse response) {
+		try {
+			SqlSession ss = DBManager.connect();
+			request.setCharacterEncoding("UTF-8");
+			String id = request.getParameter("id");
+			List<MovieUser> mu = ss.selectList("team5.idCheck", id);
+			if (mu.isEmpty()) {
+				return true;
+			} else {
+				request.setAttribute("re", "ID 중복");
+				return false; 
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
 	public static void logIn(HttpServletRequest request) {
 		try {
 			SqlSession ss = DBManager.connect();

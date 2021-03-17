@@ -1,0 +1,52 @@
+@charset "UTF-8";
+#mirTbl {
+	width: 80%;
+	align-content: center;
+	align-self: center;
+	align-items: center;
+	margin: auto;
+	border-color: white;
+	border-width: thin;
+}
+#mirTbl tbody {
+	align-self: center;
+	vertical-align: middle;
+}
+#mirTbl td {
+	padding: 20px;
+}
+.mirCtg {
+	align-content: center;
+	align-self: center;
+	align-items: center;
+	background-color: #ccc;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	height: 1px;
+	width: 30%;	
+}
+.mirCnt {
+	text-align: center;
+}
+#lnr {
+	margin: auto;
+	text-align: center;
+	font-size: 25pt;
+}
+#lnr td{
+	padding: 3px;
+	width: 30px;
+}
+#nowNum{
+	color: black;
+}
+.leftRight button{
+	border: none;
+	background-color: transparent;
+	text-align: center;
+	font-size: 20pt;
+	color: black;
+	padding: 3px;
+}

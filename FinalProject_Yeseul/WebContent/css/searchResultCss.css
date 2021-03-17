@@ -1,0 +1,73 @@
+@charset "UTF-8";
+#lnr {
+	margin: auto;
+	text-align: center;
+	font-size: 25pt;
+}
+#lnr td {
+	padding: 3px;
+	width: 30px;
+}
+#nowNum {
+	color: black;
+}
+.leftRight a {
+	border: none;
+	background-color: transparent;
+	text-align: center;
+	font-size: 20pt;
+	color: #ccc;
+	padding: 3px;
+}
+#srTbl {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	border-collapse: collapse;
+}
+#srTbl td {
+	padding: 10px;
+	height: 200px;
+	border-style: dotted;
+	border-width: thin;
+	border-color: black;
+}
+.tblMid {
+	border-right-style: dotted;
+	border-right-width: thin;
+	border-right-color: white;
+}
+img {
+	height: 100%;
+	object-fit: contain;
+}
+#sr_img {
+	object-fit: contain;
+}
+#srTbl button {
+	background-color: transparent;
+	font-size: 20pt;
+	color: black;
+	border: none;
+}
+#srCtg {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	background-color: #575756;
+	color: white;
+	border-collapse: collapse;
+}
+#tblEnd {
+	border-right: none;
+}
+#srCtg tbody {
+	align-self: center;
+	vertical-align: middle;
+}
+#srCtg td {
+	padding: 10px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
