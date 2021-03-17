@@ -22,9 +22,9 @@ public class RRC extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		DAO.logIn(request);
 		DAO.loginCheck(request);
 		DAO.regReview(request);
+		DAO.getMyStar(request);
 		DAO.reviewsPaging(1, request, DAO.reviewPage(request));
 		
 		request.setAttribute("movieReviewWrite", "movieInfoWrite.jsp");

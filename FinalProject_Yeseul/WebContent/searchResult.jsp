@@ -79,8 +79,8 @@
 <link rel="stylesheet" type="text/css" href="css/searchResultCss.css">
 <body>
 	<br>
-	
-	
+
+
 	<table id="srCtg">
 		<tr>
 			<td width="20%" class="tblMid">제목</td>
@@ -102,9 +102,9 @@
 						name="title"> <input type="hidden" value="${m.m_subtitle}"
 						name="subtitle">
 					</td>
-					<td align="center" style="width: 10%;" id="sr_img">
-					<img style="width: 100%;" src="${m.m_image}">
-					<input type="hidden" value="${m.m_image}" name="image"></td>
+					<td align="center" style="width: 10%;" id="sr_img"><img
+						style="width: 100%;" src="${m.m_image}"> <input
+						type="hidden" value="${m.m_image}" name="image"></td>
 					<td style="width: 5%">${m.m_pubdate}<input type="hidden"
 						value="${m.m_pubdate}" name="pubDate">
 					</td>
@@ -121,7 +121,7 @@
 			</table>
 		</form>
 	</c:forEach>
-	
+
 	<table id="lnr">
 		<tr>
 			<td class="leftRight"><c:if test="${curPageNo != 1}">

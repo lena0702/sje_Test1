@@ -25,7 +25,7 @@ public class MIC extends HttpServlet {
 		DAO.logIn(request);
 		DAO.loginCheck(request);
 		DAO.reviewPage(request);
-//		DAO.getMyStar(request);
+		DAO.getMyStar(request);
 		
 		DAO.reviewsPaging(1, request, DAO.reviewPage(request));
 		request.setAttribute("movieReviewWrite", "movieInfoWrite.jsp");

@@ -25,6 +25,7 @@ public class MIRC extends HttpServlet {
 			throws ServletException, IOException {
 		DAO.logIn(request);
 		DAO.loginCheck(request);
+		DAO.getMyStar(request);
 		
 		int p = Integer.parseInt(request.getParameter("p"));
 		DAO.reviewsPaging(p, request, DAO.reviewPage(request));

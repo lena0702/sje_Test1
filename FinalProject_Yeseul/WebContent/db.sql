@@ -16,9 +16,9 @@ drop table MovieUser cascade constraint purge;
 create table MovieReview(
 r_no number(3) primary key,
 r_date date not null,
-r_username varchar2(10 char) not null,
+r_username varchar2(20 char) not null,
 r_title varchar2(50 char) not null,
-r_userid varchar2(10 char) not null,
+r_userid varchar2(20 char) not null,
 r_review varchar2(2000 char) not null,
 r_star number(5) not null
 );

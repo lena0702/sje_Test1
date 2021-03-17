@@ -232,11 +232,11 @@
 							<table>
 								<tr>
 									<td><c:if test="${curPageNo != 1 }">
-											<a style="color: black;" href="MPC?p=${curPageNo - 1 }">&lt;</a>
+											<a style="color: black;" href="MPC?p=${curPageNo - 1 }&genre=${sessionScope.accountInfo.u_fav}"">&lt;</a>
 										</c:if></td>
 									<td>${curPageNo }</td>
 									<td><c:if test="${curPageNo != pageCount }">
-											<a style="color: black;" href="MPC?p=${curPageNo + 1 }">&gt;</a>
+											<a style="color: black;" href="MPC?p=${curPageNo + 1 }&genre=${sessionScope.accountInfo.u_fav}"">&gt;</a>
 										</c:if></td>
 								</tr>
 							</table>

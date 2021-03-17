@@ -13,13 +13,15 @@ public class MPC extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		DAO.logIn(request);
 		DAO.loginCheck(request);
+		if (request.getSession().getAttribute("accountInfo") != null) {			
 		GetMovie.getR_Movie(request);
-		
 		int p = Integer.parseInt(request.getParameter("p"));
 		DAO.reviewsPaging(p, request, DAO.getMyReviews(request));;
 		request.setAttribute("contentPage", "myPage.jsp");
+		} else {			
+			request.setAttribute("contentPage", "login.jsp");
+		}		
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)

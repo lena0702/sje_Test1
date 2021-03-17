@@ -15,17 +15,15 @@ public class MyC extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
 		
-		DAO.logIn(request);
 		DAO.loginCheck(request);
-		if (request.getSession() != null) {			
+		if (request.getSession().getAttribute("accountInfo") != null) {			
 			GetMovie.getR_Movie(request);
 			DAO.reviewsPaging(1, request, DAO.getMyReviews(request));;
 			
 			request.setAttribute("contentPage", "myPage.jsp");
 		} else {
-			request.setAttribute("contentPage", "home.jsp");
+			request.setAttribute("contentPage", "login.jsp");
 		}
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
